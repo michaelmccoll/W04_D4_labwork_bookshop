@@ -7,8 +7,15 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Book Shop</title>
 </head>
-<h1>Book Shop</h1>
 <body>
+    <header>
+        <h1>Book Shop</h1>
+        <ul class="navigation">
+            <li><a href="/">Home</a></li>
+            <li><a href="/books">Book List</a></li>
+            <li><a href="/books/new">Add New Books</a></li>
+        </ul>
+    </header>
     {% block content %}
     
     {% endblock %}

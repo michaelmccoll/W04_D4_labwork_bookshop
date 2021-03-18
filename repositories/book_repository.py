@@ -36,7 +36,7 @@ def select(id):
 
     if result is not None:
         author = author_repository.select(result['author_id'])
-        book = Book(result['description'], result['description'], author, result['theme'], result['id'] )
+        book = Book(result['title'], result['description'], author, result['theme'], result['id'] )
     return book
 
 
